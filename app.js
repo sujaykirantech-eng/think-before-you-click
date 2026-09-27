@@ -14,7 +14,7 @@
   loadStats();
   setInterval(loadStats,60000);
 
-  const start=new Date('2026-10-19T18:30:00+05:30');
+  const start=new Date('2026-10-19T19:00:00+05:30');
   document.querySelectorAll('[data-event-local]').forEach(el=>{
     try{const tz=Intl.DateTimeFormat().resolvedOptions().timeZone;const local=new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short',timeZoneName:'short'}).format(start);el.textContent=local+' · '+tz;}catch(e){}
   });
