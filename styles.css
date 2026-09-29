@@ -15,3 +15,6 @@
   box-sizing: border-box;
   overflow-wrap: anywhere;
 }
+
+/* Logo visibility fix */
+.brand-logo { width:38px !important; height:38px !important; min-width:38px !important; min-height:38px !important; display:block !important; object-fit:contain !important; opacity:1 !important; visibility:visible !important; }
